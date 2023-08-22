@@ -30,5 +30,10 @@ public class Test {
         System.out.println("myString = "+myString);
         System.out.println("myBoolean = "+myBoolean);
 
+        //Классы обвертки
+        Integer objInt = 5;
+        Byte objByte = 12;
+        System.out.println("Integer:"+objInt);
+
     }
 }
