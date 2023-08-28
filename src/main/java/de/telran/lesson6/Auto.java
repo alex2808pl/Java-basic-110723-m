@@ -17,15 +17,21 @@ public class Auto {
         maxSpeed = maxSpeedArg;
     }
 
-    public Auto(String nameArg, int maxSpeedArg, int yearIssueArg ) {
-        name = nameArg;
-        maxSpeed = maxSpeedArg;
-        yearIssue = yearIssueArg;
+//    public Auto(String nameArg, int maxSpeedArg, int yearIssueArg ) {
+//        name = nameArg;
+//        maxSpeed = maxSpeedArg;
+//        yearIssue = yearIssueArg;
+//    }
+
+    public Auto(String name, int maxSpeed, int yearIssue) {
+        this.maxSpeed = maxSpeed;
+        this.name = name;
+        this.yearIssue = yearIssue;
     }
 
-
     void run() {
+        int yearIssue = 1111;
         System.out.println("Машина едет "+name+" c max скоростью "+maxSpeed
-                +". Год выпуска - "+yearIssue);
+                +". Год выпуска - "+this.yearIssue);
     }
 }
