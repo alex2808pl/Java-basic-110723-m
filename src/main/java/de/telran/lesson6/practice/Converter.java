@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class Converter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Scanner scannerText = new Scanner(System.in);
         long number; // число
-        int numberSystem; //текущая система счисления
-        int numberSystemNumber; // система счисления для перевода
+        int inNumberSystem; //текущая система счисления
+        int outNumberSystem; // система счисления для перевода
 
         System.out.print("В какой системе счисления текущее число? ");
-        numberSystem = scanner.nextInt();
+        inNumberSystem = scanner.nextInt();
         System.out.print("Введите число: ");
-        number = scanner.nextLong();
+        number = Long.parseLong(scannerText.nextLine(), inNumberSystem);
         System.out.print("В какую систему счисления преобразовать? ");
-        numberSystemNumber = scanner.nextInt();
-        System.out.println("Полученное число = "+Long.toString(number, numberSystemNumber));
+        outNumberSystem = scanner.nextInt();
+        System.out.println("Полученное число = "+Long.toString(number, outNumberSystem));
     }
 }
