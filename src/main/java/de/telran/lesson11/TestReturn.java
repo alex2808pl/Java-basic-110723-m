@@ -15,6 +15,8 @@ public class TestReturn {
 
         divideVoid(val1, val2);
 
+        divideVoidAnother(val1, val2);
+
     }
 
     static int divide(int val1, int val2) { //мы не можем использовать null
@@ -30,5 +32,14 @@ public class TestReturn {
         }
         int result = val1 / val2;
         System.out.println("Результат выражения в divideVoid "+val1+" / "+val2+" = "+result);
+    }
+
+    static void divideVoidAnother(int val1, int val2) {
+        if(val2 != 0) {
+            int result = val1 / val2;
+            System.out.println("Результат выражения в divideVoid "+val1+" / "+val2+" = "+result);
+        }
+        else System.out.println("второй параметр не может быть равен 0");
+
     }
 }

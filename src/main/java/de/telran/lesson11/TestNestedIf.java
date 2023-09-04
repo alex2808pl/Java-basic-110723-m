@@ -2,7 +2,7 @@ package de.telran.lesson11;
 
 public class TestNestedIf {
     public static void main(String[] args) {
-        int myInt = 18;
+        int myInt = 13;
         System.out.println("Основной поток программы");
         if(myInt > 0) {
             System.out.println("myInt больше 0");
