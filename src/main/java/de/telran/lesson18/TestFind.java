@@ -17,7 +17,7 @@ public class TestFind {
     }
 
     static int searchLine(int[] arr, int key) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {   //for(int i = arr.lenght()-1; i>=0; i--) поиск с конца массива
             if(arr[i] == key) return i;
         }
         return -1;
