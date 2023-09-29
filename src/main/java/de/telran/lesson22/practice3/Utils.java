@@ -6,6 +6,9 @@ import static de.telran.lesson22.practice3.Constants.COUNT_SET_SIZE;
 import static de.telran.lesson22.practice3.Constants.RANGE_NUMBER_LOTTARY;
 
 public class Utils {
+
+    public int count;
+
     public static int[] getUserLotteryNumber() {
         // номера, которые ввел пользователь
         int[] userNumbers = new int[COUNT_SET_SIZE];
